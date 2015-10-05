@@ -7,15 +7,18 @@
     
     function cloudPass() {
 	$.each($('.cloud'), function (k,el) {
-	    var elPos = $(el).position().left;
+	    var elLeft = $(el).position().left;
+	    var elTop = $(el).position().top;
 	    var pos = $(window).width();
 	    var speed = $(el).attr('class').split(' ')[1].charAt(1) * .2;
-	    if(elPos < -500) {
-		elPos = pos;
+	    if(elLeft < -500) {
+		elLeft = pos;
+		elTop = getRandomNumber($(window).height()/2);
 	    }
 
 	    $(el).css({
-		'left': elPos - 1*speed + 'px'
+		'left': elLeft - 1*speed + 'px',
+		'top': elTop + 'px'
 	    });
 	});
 	
@@ -39,7 +42,6 @@
 		});
 		
 		if(count <=10) {
-		    console.log(count);
 		    count++;
 		    cloud();
 		}
@@ -58,9 +60,24 @@
 	$('.landscape').height($(window).height());
     }
 
+    function moveCity () {
+	var el = $('.city');
+	el.css({
+	    'left': '-' + $(window).scrollTop() + 'px'
+	});
+    }
+
+    function moveBeach() {
+	var el = $('.beach');
+	el.css({
+	    'right': '-' + $(window).scrollTop() + 'px'
+	});
+    }
+
     $(window).scroll(function () {
 	if($(window).scrollTop() <= $(window).height()) {
-	    
+	    moveCity();
+	    moveBeach();
 	}
     });
 

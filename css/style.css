@@ -1,4 +1,4 @@
-html,body,document,h1,h2,h3,h4 {
+html,body,document {
     padding: 0;
     margin: 0;
     width: 100%;
@@ -7,7 +7,6 @@ html,body,document,h1,h2,h3,h4 {
 .landscape {
     background-color: #0CA5D1;
     width: 100%;
-    background-image: url('../img/crab.jpg');
     background-size: 30%;
     background-repeat: no-repeat;
     background-position: center;
@@ -19,10 +18,22 @@ html,body,document,h1,h2,h3,h4 {
 }
 
 .clouds {
-    position:relative;
+    position:absolute;
     overflow: hidden;
     height: 100%;
     width: 100%;
+}
+
+.city {
+    bottom: 0;
+    position: absolute;
+    left: 0;
+}
+
+.beach {
+    bottom: 0;
+    position: absolute;
+    right: 0;
 }
 
 .cloud {
@@ -33,4 +44,21 @@ html,body,document,h1,h2,h3,h4 {
     -moz-border-radius: 200px;
     -webkit-border-radius: 200px;
     position: absolute; 
+    box-shadow: 2px 2px 5px #c3c3c3;
+}
+
+.x1 {
+    z-index: 2;
+}
+
+.x2 {
+    z-index: 4;
+}
+
+.x1 {
+    z-index: 6;
+}
+
+.x1 {
+    z-index: 8;
 }
