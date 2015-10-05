@@ -1,9 +1,36 @@
 html,body,document,h1,h2,h3,h4 {
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 .landscape {
-    background: #0CA5D1;
+    background-color: #0CA5D1;
     width: 100%;
+    background-image: url('../img/crab.jpg');
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.content {
+    height: 1000px;
+}
+
+.clouds {
+    position:relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.cloud {
+    width: 200px; 
+    height: 60px;
+    background: #fff;
+    border-radius: 200px;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+    position: absolute; 
 }
