@@ -11,10 +11,15 @@ html,body,document {
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
+    position: fixed;
+    z-index: 0;
 }
 
 .content {
-    height: 1000px;
+    height: 2000px;
+    z-index: 1;
+    position:relative;
+    background: white;
 }
 
 .clouds {
@@ -61,4 +66,10 @@ html,body,document {
 
 .x1 {
     z-index: 8;
+}
+
+.footer {
+    background: #0175A4;
+    height: 300px;
+    width: 100%;
 }
