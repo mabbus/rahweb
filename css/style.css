@@ -11,7 +11,6 @@ html,body,document {
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
-    position: fixed;
     z-index: 0;
 }
 
@@ -68,8 +67,86 @@ html,body,document {
     z-index: 8;
 }
 
+.resume {
+    padding-top: 50px;
+}
+
+.resume h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.resume .job-wrapper {
+    background-color: #F1F1F1;
+    margin-bottom: 50px;
+}
+
+.resume .job {
+    height: 300px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.resume .job .company-logo {
+    width: 40%;
+    height: 250px;
+    margin-top: 25px;
+    text-align: center;
+    float: left;
+}
+
+.resume .job .job-desc {
+    width: 60%;
+    height: 250px;
+    margin-top: 25px;
+    float: left;
+    padding: 0;
+}
+
+.resume ul {
+    list-style: none;
+}
+
+.resume .company {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.resume .job-title {
+
+}
+
+.resume .job-details {
+    
+}
+
+.samples {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.samples .sample {
+    width: 33%;
+    height: 200px;
+    float: left;
+    background: #DDF1F2;
+    box-sizing: border-box;
+    border: 20px solid white;
+    border-radius: 30px;
+}
+
+.samples h2 {
+    text-align: center;
+    margin: 60px;
+    font-weight: 400;
+}
+
+
 .footer {
     background: #0175A4;
     height: 300px;
     width: 100%;
 }
+
