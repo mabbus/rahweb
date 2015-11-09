@@ -41,3 +41,17 @@
 	renderLandscape();
     });
 })(jQuery);
+
+
+(function ($) {
+    $(document).ready(function () {
+	$('.nav-mobile').click(function (){ 
+	    event.stopPropagation();
+	    $('.mobile-dropdown').show();
+	});
+    });
+
+    $('html').click(function () {
+	$('.mobile-dropdown').hide();
+    });
+})(jQuery);
