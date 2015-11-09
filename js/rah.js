@@ -18,7 +18,11 @@
     }
 
     function renderLandscape () {
-
+	var width = 50 - ($(window).scrollTop() / $(window).height()) * 50;
+	var left = $(window).scrollTop() / 2;
+	$('.landscapes').width(width+"%");
+	$('.right-landscape').css({'left': left+'px'});
+	$('.left-landscape').css({'left': -left+'px'});
     }
 
     function resize () {
@@ -28,7 +32,7 @@
 
     $(window).scroll(function () {
 	if($(window).scrollTop() <= $(window).height()) {
-
+	    renderLandscape();
 	}
     });
 
