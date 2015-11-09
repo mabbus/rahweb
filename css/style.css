@@ -7,11 +7,12 @@ html,body,document {
 .main_wrapper {
     width: 100%;
     min-width: 500px;
+    overflow: hidden;
 }
 
 .logo {
     position: fixed;
-    margin-left: -118px;
+    margin-left: -126px;
     left: 50%;
     margin-top: 50px;
 }
@@ -68,57 +69,171 @@ html,body,document {
     z-index: 0;
 }
 
+.left-landscape {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.right-landscape {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.left-landscape > div, .right-landscape > div {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cloud0 {
+    background-image: url('../img/cloud0.png');
+    height: 100px;
+    width: 156px;
+    bottom: 50%;
+    left: 2%;
+}
+
+.cloud1 {
+    background-image: url('../img/cloud1.png');
+    width: 217px;
+    height: 126px;
+    bottom: 65%;
+    left: 15%;
+}
+
+.cloud2 {
+    background-image: url('../img/cloud2.png');
+    width: 182px;
+    height: 111px;
+    bottom: 60%;
+    left: 48%;
+}
+
+.cloud3 {
+    background-image: url('../img/cloud3.png');
+    width: 156px;
+    height: 95px;
+    right: 60%;
+    bottom: 65%;
+}
+
+.cloud4 {
+    background-image: url('../img/cloud4.png');
+    width: 222px;
+    height: 115px;
+    right: 36%;
+    bottom: 53%;
+}
+
+.cloud5 {
+    background-image: url('../img/cloud5.png');
+    width: 94px;
+    height: 62px;
+    right: 26%;
+    bottom: 70%;
+}
+
+.cloud6 {
+    background-image: url('../img/cloud6.png');
+    width: 158px;
+    height: 96px;
+    right: 2%;
+    bottom: 50%;
+}
+
+.ground {
+    width: 80%;
+    height: 35px;
+    background-color: #3C4D5D;
+    border-radius: 13px;
+    bottom:0;
+    left: 2%;
+}
+
+.building {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.building0 {
+    background-image: url('../img/building0.png');
+    bottom: 35px;
+    left: 5%;
+    width: 77px;
+    height: 526px;
+}
+
+.building1 {
+    background-image: url('../img/building1.png');
+    bottom: 35px;
+    left: 17%;
+    width: 193px;
+    height: 426px;
+}
+
+.building2 {
+    background-image: url('../img/building2.png');
+    bottom: 35px;
+    left: 48%;
+    width: 77px;
+    height: 283px;
+}
+
+.sun {
+    background-image: url('../img/sun.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 116px;
+    width: 117px;
+    bottom: 60%;
+    left: 7%;
+}
+
+.sand {
+    width: 80%;
+    height: 35px;
+    background-color: #FCCC10;
+    border-radius: 13px;
+    position: absolute;
+    bottom:0;
+    right: 2%;
+}
+
+.palmtree0 {
+    background-image: url('../img/palmtree0.png');
+    height: 294px;
+    width: 219px;
+    bottom: 35px;
+    right: 48%;
+}
+
+.palmtree1 {
+    background-image: url('../img/palmtree1.png');
+    height: 465px;
+    width: 316px;
+    bottom: 35px;
+    right: 17%;
+}
+
+.surfboard {
+    background-image: url('../img/surfboard.png');
+    height: 359px;
+    width: 127px;
+    bottom: 35px;
+    right: 5%;
+}
+
+
 .content {
     height: auto;
     z-index: 1;
     position:relative;
     background: white;
-}
-
-.clouds {
-    position:absolute;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-}
-
-.city {
-    bottom: 0;
-    position: absolute;
-    left: 0;
-}
-
-.beach {
-    bottom: 0;
-    position: absolute;
-    right: 0;
-}
-
-.cloud {
-    width: 200px; 
-    height: 60px;
-    background: #fff;
-    border-radius: 200px;
-    -moz-border-radius: 200px;
-    -webkit-border-radius: 200px;
-    position: absolute; 
-    box-shadow: 2px 2px 5px #c3c3c3;
-}
-
-.x1 {
-    z-index: 2;
-}
-
-.x2 {
-    z-index: 4;
-}
-
-.x1 {
-    z-index: 6;
-}
-
-.x1 {
-    z-index: 8;
 }
 
 .resume {
@@ -288,8 +403,69 @@ button {
 
 .footer {
     background: #0175A4;
-    height: 400px;
+    height: 500px;
     width: 100%;
+    position: relative;
+}
+
+.footer > div {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.footer .reef {
+    background-image: url('../img/reef.png');
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: bottom;
+    bottom: 0;
+}
+
+.star0 {
+    background-image: url('../img/star0.png');
+    width: 88px;
+    height: 85px;
+    position: absolute;
+    bottom: 190px;
+    left: 15%;
+}
+
+.fish0 {
+    background-image: url('../img/fish.png');
+    width: 88px;
+    height: 85px;
+    position: absolute;
+    bottom: 80px;
+    left: 25%;
+}
+
+.seahorse {
+    background-image: url('../img/seahorse.png');
+    width: 141px;
+    height: 193px;
+    position: absolute;
+    bottom: 40px;
+    left: 37%;
+}
+
+.shark {
+    background-image: url('../img/shark.png');
+    width: 521px;
+    height: 196px;
+    position: absolute;
+    bottom: 190px;
+    left: 50%;
+}
+
+.fish1 {
+    background-image: url('../img/fish1.png');
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    bottom: 190px;
+    right: 2%;
 }
 
 @media only screen and (max-width:1200px) {
@@ -310,6 +486,7 @@ button {
     .nav-mobile {
 	display: block;
 	position: fixed;
+	z-index: 10;
     }
 
     .nav-mobile ul {
